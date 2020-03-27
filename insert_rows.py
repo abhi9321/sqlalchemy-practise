@@ -10,7 +10,10 @@ students = Table(
     Column('lastname', String),
 )
 
-ins = students.insert().values(name='Ravi', lastname='Kapoor')
-
+# ins = students.insert().values(name='Ravi', lastname='Kapoor')
+ins = students.insert().values(name='Abhi', lastname='Gowda')
+# ins = students.insert().values(name='Priya', lastname='Bhatt')
 conn = engine.connect()
 result = conn.execute(ins)
+
+
